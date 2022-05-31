@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>牧野武蔵のテスト</title>
+
+</head>
+<center>
+<h1>MAKINO'sTEST </h1></center>
+<h3>１問１０点 60点で単位認定！</h3>
+<hr>
+<p>
+<h3>1.身長はいくつでしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">177．7</label>
+<label><input type="checkbox" id="check2">176．6</label>
+<label><input type="checkbox" id="check3">178．8</label>
+</div>
+
+
+<h3>2.好きな色はなんでしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">赤</label>
+<label><input type="checkbox" id="check2">白</label>
+<label><input type="checkbox" id="check3">黒</label>
+</div>
+
+<h3>3.靴のサイズはどれでしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">29</label>
+<label><input type="checkbox" id="check2">27</label>
+<label><input type="checkbox" id="check3">28</label>
+</div>
+
+<h3>4.コーヒーのバイトの名前は何でしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">朧月</label>
+<label><input type="checkbox" id="check2">カルティ</label>
+<label><input type="checkbox" id="check3">ワルツ</label>
+</div>
+
+
+<h3>5.中学の時にやっていた部活は何でしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">バスケ</label>
+<label><input type="checkbox" id="check2">バレー</label>
+<label><input type="checkbox" id="check3">卓球</label>
+</div>
+
+<h3>6.お金が貯まったらほしいと言っていたものは何でしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">携帯</label>
+<label><input type="checkbox" id="check2">ヨギボー</label>
+<label><input type="checkbox" id="check3">パソコン</label>
+</div>
+
+
+<h3>7.趣味は何でしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">しおり作り</label>
+<label><input type="checkbox" id="check2">映画視聴</label>
+<label><input type="checkbox" id="check3">喫茶店巡り</label>
+</div>
+
+
+<h3>8.好きなお菓子は何でしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">アルフォート</label>
+<label><input type="checkbox" id="check2">ポッキー</label>
+<label><input type="checkbox" id="check3">芋けんぴ</label>
+</div>
+
+
+
+<h3>９.嫌いな天気はどれでしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">雨</label>
+<label><input type="checkbox" id="check2">雪</label>
+<label><input type="checkbox" id="check3">猛暑</label>
+</div>
+
+
+<h3>１０．欲家族へ差し入れで買っていく物はどれでしょう</h3>
+<div>
+<label><input type="checkbox" id="check1">コーヒー</label>
+<label><input type="checkbox" id="check2">シュークリーム</label>
+<label><input type="checkbox" id="check3">パン</label>
+</div>
+
+
+<div>
+<input type="button" value="回答" id="checkButton">
+</div>
+
+<script>
+function butotnClick(){
+  if (checkbox1.checked){
+    console.log('夕食付き');
+  } else {
+    console.log('夕食なし');
+  }
+
+  if (checkbox2.checked){
+    console.log('朝食付き');
+  } else {
+    console.log('朝食なし');
+  }
+}
+
+let checkbox1 = document.getElementById('check1');
+let checkbox2 = document.getElementById('check2');
+checkbox2.checked = true;
+
+let checkButton = document.getElementById('checkButton');
+checkButton.addEventListener('click', butotnClick);
+</script>
+
+</body>
+</html>
